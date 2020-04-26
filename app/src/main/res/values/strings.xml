@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MySubmission</string>
+    <string name="name">maman</string>
+    <string name="posisi">stiker</string>
+    <string name="myName">Muhammad Ibnu Subhan</string>
+    <string name="letterme">Nama saya Muhammad Ibnu Subhan Saya adalah mahasiswa tingkat akhir di salah satu perguruan tinggi Kota Tegal, saya seorang programmer Junior, saya mempunyai minat di mobile programming dan saya selalu haus ilmu baru dan semangat dalam belajar.</string>
+    <string name="dicoding">Akun Dicoding :</string>
+    <string name="namaibnu">Nama : Muhammad Ibnu Subhan</string>
+    <string name="email">Email : muhammadibnusubhan@gmail.com</string>
+</resources>

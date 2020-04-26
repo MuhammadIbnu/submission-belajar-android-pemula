@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DetailActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="945dp"
+            android:layout_height="279dp"
+            android:src="@drawable/background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bunkus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:background="#fff"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/img_poster"
+                android:layout_width="200dp"
+                android:layout_height="560dp"
+                android:layout_gravity="fill"
+                android:contentDescription="sahar"
+                android:foregroundGravity="fill"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/maman" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sahar"
+            android:textColor="#000"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="@id/bunkus"
+            app:layout_constraintStart_toStartOf="@id/bunkus"
+            app:layout_constraintTop_toBottomOf="@id/bunkus" />
+
+        <LinearLayout
+            android:id="@+id/menu"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nama"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="92dp"
+                    android:src="@drawable/ic_soccer" />
+                <TextView
+                    android:id="@+id/posisi"
+                    android:textSize="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="penjaga gawang"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_calen"/>
+
+                <TextView
+                    android:id="@+id/tglLahir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:text="20 - april - 1998"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="83dp"
+                    android:src="@drawable/ic_nation"/>
+                <TextView
+                    android:id="@+id/national"
+                    android:textSize="10sp"
+                    android:layout_marginTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="penjaga gawang"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/menu">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="Deskripsi"/>
+
+            <TextView
+                android:id="@+id/deskripsi"
+                android:layout_marginTop="50sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Deskripsi"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
